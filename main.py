@@ -33,6 +33,7 @@ def move_backwards():
 # Esta función hace que la tortuga gire 10 grados a la derecha
 def turn_right():
     
+    #El metodo heading() nos da el angulo actual de la tortuga
     # Calcula el nuevo ángulo de la tortuga restando 10 grados al actual
     new_setheading = turtle.heading() - 10      
     # Usa el método setheading de la tortuga para establecer el nuevo ángulo
@@ -53,7 +54,7 @@ screen=Screen()
 # Usa el método listen de la pantalla para activar la escucha de eventos del teclado y el ratón
 screen.listen()
 
-#funcion con el objetivo de registrar los eventos del teclado
+
 #Nota: cuando pasamos una funcion como argumento de otra funcion, no ponemos los parentesis
 # Usa el método onkey de la pantalla para asociar cada función a una tecla
 screen.onkey(move_forward, "Up")
